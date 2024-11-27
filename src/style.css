@@ -372,9 +372,9 @@ transform: scale(1.1);
              text-align: center;
          }
 
-                  #aboutme {
-                      flex-direction: column;
-                      padding-top: 100px;
+        #aboutme {
+             flex-direction: column;
+              padding-top: 80px;
                   }
 
 
