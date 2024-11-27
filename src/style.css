@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Serif' ;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    color: black;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Style for navigation bar*/
+.topnav{
+    position: fixed;
+    background: lightgray;
+    width: 100%;
+    line-height: 1.5;
+}
+
+  header .logo {
+      width: 60px;
+      border-radius: 100px;
+      float: left;
+      margin: 10px;
+      cursor: pointer;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding: 10px;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  
+/*style for about me section*/
+#aboutme{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  padding-top: 135px;
+
+}
+
+.profile{
+    width: 300px;
+    padding: 30px;
+    margin: 45px;
+}
+
+.connect a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+ .aboutme span {
+     font-size: 25px;
+ }
+
+.about-me{
+    border-left: 1px solid black;
+    height: 400px;
+    width: 50%;
+    padding:0;
+    margin-right: 50px;
+    padding: 20px;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+}
+
+button{
+    padding: 15px;
+    border-radius: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    background: black;
+    border: none;
+    margin-top: 10px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Skills style*/
+
+.skill-set{
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+}
+
+.fitness,
+.web,
+.va,
+.tech,
+.interpersonal {
+    border: 1px solid lightgray;
+    height: auto;
+    margin: 3px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+}
+.web img{
+    width: 30px;
+}
+
+i{
+    font-size: 30px;
+}
+
+/*Style for projects*/
+
+#projects{
+  padding: 50px;
+  width: 100%;
+  background: lightgray;
+  
+}
+
+.project-work{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    width: fit-content;
+}
+
+
+
+.video {
+    margin: 10px; 
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+
+
+
+.project{
+    display: flex;
+    flex-direction: row;
+}
+.virtual_assistant{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+img{
+    width: 420px;
+}
+
+.image1,
+.image2,
+.image3 {
+    background: white;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform 0.3ms ease-in-out;
+}
+
+
+.image1:hover,
+.image2:hover,
+.image3:hover{
+transform: scale(1.1);
+    /* Slight zoom effect on hover */
+}
+
+/* General Mobile and Tablet Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    h1,
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Navigation bar */
+    .topnav {
+        position: fixed;
+        background: lightgray;
+        width: 100%;
+        line-height: 1.2;
+        z-index: 1000;
+        top: 0;
+    }
+
+    header .logo {
+        width: 70px;
+        margin: 5px auto;
+        display: block;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* About Me Section */
+    #aboutme {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .profile {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .about-me {
+        border-left: none;
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Skills Section */
+    .skill-set {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .fitness,
+    .web,
+    .va,
+    .tech,
+    .interpersonal {
+        margin: 10px 0;
+    }
+
+    /* Projects Section */
+    #projects {
+        padding: 20px;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .virtual_assistant {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .image1,
+    .image2,
+    .image3 {
+        width: 100%;
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    /* Buttons */
+    button {
+        width: 80%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Additional adjustments for very small screens */
+    body {
+        font-size: 14px;
+    }
+
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .nav {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+
+        .nav li {
+            margin: 8px 0;
+        }
+
+    button {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
