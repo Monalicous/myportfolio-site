@@ -322,9 +322,28 @@ transform: scale(1.1);
         font-size: 14px;
     }
 
+ header .logo {
+    width: 65px;
+    margin: 5px auto;
+    display: block;
+         }
+
+ .topnav {
+         position: fixed;
+         background: lightgray;
+         width: 100%;
+         line-height: 1.2;
+         z-index: 1000;
+        top: 0;
+                 }
+
     .nav {
         font-size: 12px;
         padding: 5px 0;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+        align-items: center;
     }
 
         .nav li {
