@@ -375,6 +375,7 @@ transform: scale(1.1);
         #aboutme {
              flex-direction: column;
               padding-top: 10px;
+              padding-bottom: 10px;
                   }
 
 }
