@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home Page</title>
+
+    <style>
+        body {
+            font-family: 'Noto Serif';
+            background: rgba(129, 129, 124, 0.4);
+        }
+
+        .fa-codepen {
+            color: white;
+        }
+
+        .fa-instagram {
+            color: purple;
+        }
+
+        .fa-whatsapp {
+            color: lightgreen;
+        }
+
+        .fa-github {
+            color: black;
+        }
+
+        img {
+            width: 100px;
+            border-radius: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+        }
+
+        button {
+            display: block;
+            margin: 35px auto;
+            padding: 15px;
+            width: 18%;
+            border-radius: 30px;
+            border: 1px solid white;
+            background: transparent;
+        }
+
+        button a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            float: right;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/Monalicous" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://codepen.io/Samukelisiwe-Monalisa-Ntusi" target="_blank"><i
+                        class="fa-brands fa-codepen">
+                    </i></a></li>
+            <li><a href="https://www.instagram.com/monalisa_ntusi" target="_blank"><i class="fa-brands fa-instagram">
+                    </i></a></li>
+            <li><a href="https://wa.me/+96895220264" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <section id="home">
+        <img src="images/samo.png" alt="logo" onclick="typeWriter()">
+        <div id="content"></div>
+    </section>
+    <button><a href="index.html">Portfolio</a></button>
+
+</body>
+
+</html>

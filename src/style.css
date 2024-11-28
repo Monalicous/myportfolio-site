@@ -28,7 +28,7 @@ p{
 /*Style for navigation bar*/
 .topnav{
     position: fixed;
-    background: lightgray;
+    background: rgba(129, 129, 120, 0.2);
     width: 100%;
     line-height: 1.5;
 }
