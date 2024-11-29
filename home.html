@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/style.css">
     <title>Home Page</title>
 
     <style>
@@ -31,13 +32,27 @@
             color: black;
         }
 
-        img {
+        img.logo {
             width: 100px;
             border-radius: 100px;
             display: block;
             margin-left: auto;
             margin-right: auto;
             margin-top: 200px;
+            transition: trasform 2s ease;
+            cursor: pointer;
+        }
+
+        .home {
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            /* Space between logo and message */
+            transition: transform 2s ease;
         }
 
         button {
@@ -71,13 +86,25 @@
             text-decoration: none;
         }
 
-        @media screen and (max-width: 468px) {
-            button {
-                width: 18%;
-                padding: 15px;
 
+        @keyframes typing {
+            from {
+                width: 0;
             }
 
+            to {
+                width: 40%;
+            }
+        }
+
+        @keyframe blink {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
         }
     </style>
 </head>
@@ -96,14 +123,17 @@
         </ul>
     </nav>
     <section class="home">
-        <img src="images/samo.png" alt="logo" class="logo" id="logo" />
-        <div id="message" class="hidden">
-            <span class="typed-message"></span>
+        <div class="conte">
+            <img src="images/samo.png" alt="logo" class="logo" id="logo" onclick="animateLogo()" />
+            <div id="message" class="hidden">
+                <span class="typed-message"></span><span class="cursor">|</span>
+            </div>
         </div>
     </section>
 
     <button><a href="index.html">Portfolio</a></button>
 
+    <script src="src/javascript.js"></script>
 </body>
 
 </html>

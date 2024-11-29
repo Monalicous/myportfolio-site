@@ -51,7 +51,27 @@ p{
     font-weight: bold;
   }
 
-  
+  /*Home style*/
+
+ #message {
+     display: none;
+     text-align: center;
+     margin-top: 20px;
+     font-size: 1.5rem;
+     color: #333;
+     white-space: nowrap;
+     overflow: hidden;
+ }
+
+ .typed-message {
+     display: inline-block;
+     width: 0;
+     white-space: nowrap;
+     overflow: hidden;
+     animation: typing 4s steps(30, end), blink 0.5s step-end infinite alternate;
+ }
+
+
 /*style for about me section*/
 #aboutme{
   display: flex;
