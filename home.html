@@ -70,6 +70,15 @@
         li a {
             text-decoration: none;
         }
+
+        @media screen and (max-width: 468px) {
+            button {
+                width: 18%;
+                padding: 15px;
+
+            }
+
+        }
     </style>
 </head>
 
@@ -86,10 +95,13 @@
             </li>
         </ul>
     </nav>
-    <section id="home">
-        <img src="images/samo.png" alt="logo" onclick="typeWriter()">
-        <div id="content"></div>
+    <section class="home">
+        <img src="images/samo.png" alt="logo" class="logo" id="logo" />
+        <div id="message" class="hidden">
+            <span class="typed-message"></span>
+        </div>
     </section>
+
     <button><a href="index.html">Portfolio</a></button>
 
 </body>
