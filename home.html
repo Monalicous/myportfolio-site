@@ -36,10 +36,10 @@
             width: 100px;
             border-radius: 100px;
             display: block;
-            margin-left: auto;
+            margin-left: 275px;
             margin-right: auto;
             margin-top: 200px;
-            transition: trasform 2s ease;
+            transition: transform 1s ease;
             cursor: pointer;
         }
 
@@ -63,6 +63,7 @@
             border-radius: 30px;
             border: 1px solid white;
             background: transparent;
+            transition: transform 1s ease;
         }
 
         button a {
@@ -70,6 +71,8 @@
             text-decoration: none;
             text-transform: uppercase;
         }
+
+
 
         ul {
             list-style: none;
@@ -87,23 +90,21 @@
         }
 
 
-        @keyframes typing {
-            from {
-                width: 0;
+        @keyframes spinLogo {
+            0% {
+                transform: rotate(0deg);
             }
 
-            to {
-                width: 40%;
+            100% {
+                transform: rotate(360deg);
             }
         }
 
-        @keyframe blink {
-            from {
-                opacity: 1;
-            }
 
-            to {
-                opacity: 0;
+        @media (max-width: 400px) {
+            button {
+                font-size: 0.9rem;
+                padding: 10px;
             }
         }
     </style>
@@ -123,11 +124,8 @@
         </ul>
     </nav>
     <section class="home">
-        <div class="conte">
-            <img src="images/samo.png" alt="logo" class="logo" id="logo" onclick="animateLogo()" />
-            <div id="message" class="hidden">
-                <span class="typed-message"></span><span class="cursor">|</span>
-            </div>
+        <div class="content">
+            <img src="images/samo.png" alt="logo" class="logo" id="logo" />
         </div>
     </section>
 

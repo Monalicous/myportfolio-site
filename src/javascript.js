@@ -1,22 +1,15 @@
-function animateLogo() {
-    const logo = document.getElementById('logo');
-    const message = document.getElementById('message');
-    const typedMessage = document.querySelector('.typed-message');
+// Add this to your `src/javascript.js` file or inside a script tag in your HTML
+function spinLogo() {
+    const logo = document.getElementById("logo");
 
-    // Move the logo to the left
-    logo.style.transform = 'translateX(-130px)';
+    // Add the spin class to trigger the animation
+    logo.classList.add("spin");
 
-    // Show the typing message after the animation
+    // Optionally, remove the spin class after the animation completes
     setTimeout(() => {
-        message.style.display = 'block';
-        typedMessage.textContent = "Welcome to My Portfolio!";
-
-        setTimeout(() => {
-            message.style.display = 'none';
-
-            typedMessage.textContent = "";
-
-            logo.style.transform = 'translateX(0)';
-        }, 5000);
-    }, 2000);
+        logo.classList.remove("spin");
+    }, 1000); // Match this duration to the animation time (1s)
 }
+
+// Add the event listener to trigger spinLogo on logo click
+document.getElementById("logo").addEventListener("click", spinLogo);
