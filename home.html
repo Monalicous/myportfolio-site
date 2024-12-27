@@ -8,6 +8,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> <!--typewrite link-->
     <title>Home Page</title>
 
     <style>
@@ -36,43 +37,36 @@
             width: 100px;
             border-radius: 100px;
             display: block;
-            margin-left: 275px;
-            margin-right: auto;
-            margin-top: 200px;
-            transition: transform 1s ease;
+            margin: 230px auto;
             cursor: pointer;
         }
 
         .home {
-            text-align: center;
+            display: block;
+            margin: 0;
+            padding: 0;
         }
 
-        .content {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            /* Space between logo and message */
-            transition: transform 2s ease;
+        #content {
+            text-align: center;
         }
 
         button {
             display: block;
-            margin: 35px auto;
-            padding: 15px;
-            width: 18%;
+            margin: 0 auto;
+            width: 200px;
             border-radius: 30px;
             border: 1px solid white;
             background: transparent;
-            transition: transform 1s ease;
+            padding: 10px;
         }
 
         button a {
             color: white;
             text-decoration: none;
             text-transform: uppercase;
+            text-align: center;
         }
-
-
 
         ul {
             list-style: none;
@@ -89,23 +83,14 @@
             text-decoration: none;
         }
 
-
-        @keyframes spinLogo {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
+        .hidden {
+            display: none;
         }
 
-
-        @media (max-width: 400px) {
-            button {
-                font-size: 0.9rem;
-                padding: 10px;
-            }
+        #message {
+            margin-bottom: 30px;
+            font-size: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -124,12 +109,13 @@
         </ul>
     </nav>
     <section class="home">
-        <div class="content">
+        <div id="content">
             <img src="images/samo.png" alt="logo" class="logo" id="logo" />
         </div>
+        <div id="message" class="hidden"></div>
+        <button><a href="index.html">Portfolio</a></button>
     </section>
 
-    <button><a href="index.html">Portfolio</a></button>
 
     <script src="src/javascript.js"></script>
 </body>

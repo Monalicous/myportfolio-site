@@ -1,15 +1,14 @@
-// Add this to your `src/javascript.js` file or inside a script tag in your HTML
-function spinLogo() {
-    const logo = document.getElementById("logo");
+function showMessage(response) {
+    new Typewriter("#message", {
+        strings: "Welcome to my portfolio website I hope you like it...😁",
+        autoStart: true,
+        delay: 100,
+        cursor: "",
+    });
 
-    // Add the spin class to trigger the animation
-    logo.classList.add("spin");
-
-    // Optionally, remove the spin class after the animation completes
-    setTimeout(() => {
-        logo.classList.remove("spin");
-    }, 1000); // Match this duration to the animation time (1s)
+    let mainElement = document.querySelector(".hidden");
+    mainElement.classList.remove("hidden");
 }
 
-// Add the event listener to trigger spinLogo on logo click
-document.getElementById("logo").addEventListener("click", spinLogo);
+let buttonElement = document.querySelector("#content");
+buttonElement.addEventListener('click', showMessage);

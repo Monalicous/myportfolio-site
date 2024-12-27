@@ -51,10 +51,6 @@ p{
     font-weight: bold;
   }
 
-
-
-
-
 /*style for about me section*/
 #aboutme{
   display: flex;
@@ -165,8 +161,8 @@ i{
 
 
 .project{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .virtual_assistant{
     display: flex;
