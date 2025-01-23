@@ -108,7 +108,9 @@ button{
 .skill-set{
     display: flex;
     flex-direction: row;
+    gap: 20px;
     padding: 80px;
+    flex-wrap: wrap;
 }
 
 .fitness,
@@ -163,6 +165,9 @@ i{
 .project{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 .virtual_assistant{
     display: flex;
@@ -183,7 +188,7 @@ img{
     background: white;
     margin: 5px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     transition: transform 0.3ms ease-in-out;
 }
 
@@ -261,6 +266,7 @@ transform: scale(1.1);
     /* Skills Section */
     .skill-set {
         flex-direction: column;
+        gap: 15px;
         padding: 20px;
     }
 
@@ -270,17 +276,18 @@ transform: scale(1.1);
     .tech,
     .interpersonal {
         margin: 10px 0;
+        flex: 1 1 100%
     }
 
     /* Projects Section */
     #projects {
-        padding: 20px;
+        padding: 30px;
     }
 
     .project {
         display: grid ;
         grid-template-columns: repeat(2, 1fr);
-        align-items: center;
+        gap: 15px;
     }
 
     .virtual_assistant {
@@ -295,8 +302,7 @@ transform: scale(1.1);
     .image2,
     .image3 {
         width: 100%;
-        margin: 10px auto;
-        padding: 5px;
+        padding: 8px;
     }
 
     /* Buttons */
@@ -352,8 +358,8 @@ transform: scale(1.1);
     
          .project {
              display: grid;
-             grid-template-columns: repeat(2, 1fr);
-             align-items: center;
+             grid-template-columns: 1fr;
+             gap: 10px;
          }
 
         .nav li {
@@ -379,5 +385,12 @@ transform: scale(1.1);
               padding-top: 10px;
               padding-bottom: 40px;
                   }
+
+        .image1,
+        .image2,
+        .image3{
+            width: 100%;
+            padding: 5px;
+        }
 }
 
